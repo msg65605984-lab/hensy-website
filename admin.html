@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HENSY 官网后台管理系统</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <header class="admin-topbar">
+      <a class="admin-brand" href="admin.html" aria-label="HENSY 后台首页">
+        <img src="tu/hensy-logo.svg" alt="HENSY">
+      </a>
+      <p class="admin-topbar-title">官网后台管理系统</p>
+    </header>
+
+    <aside class="admin-sidebar">
+      <nav aria-label="后台模块">
+        <button class="is-active" type="button" data-panel="banners">Banner</button>
+        <button type="button" data-panel="products">产品管理</button>
+        <button type="button" data-panel="blogs">博客管理</button>
+        <button type="button" data-panel="site">站点设置</button>
+      </nav>
+
+      <form class="login-box" data-login-form>
+        <label>
+          管理密码
+          <input type="password" data-password autocomplete="current-password" placeholder="默认 admin123">
+        </label>
+        <button type="submit">登录</button>
+        <p data-login-status>未登录时只能查看，保存和上传需要登录。</p>
+      </form>
+    </aside>
+
+    <main class="admin-shell">
+      <section class="admin-workspace">
+        <h1 class="admin-page-title" data-page-title>轮播图管理</h1>
+        <p class="admin-page-subtitle" data-page-subtitle>官网管理</p>
+
+        <div class="admin-alert" hidden data-alert></div>
+
+        <section class="panel is-active" data-panel-view="banners">
+          <div class="admin-board">
+            <div class="board-toolbar">
+              <div class="board-actions">
+                <button type="button" data-add="banner">添加轮播图</button>
+                <button class="batch-button" type="button" data-save>保存 JSON</button>
+                <button class="ghost-button" type="button" data-reload>重新读取</button>
+              </div>
+              <label class="deleted-toggle">
+                <input type="checkbox" disabled>
+                显示已删除的轮播图
+              </label>
+            </div>
+            <div data-banner-list></div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="products">
+          <div class="admin-board product-board">
+            <div class="board-toolbar product-toolbar">
+              <button type="button" data-add="product">新增产品</button>
+              <div class="product-filter">
+                <span>分类：</span>
+                <select data-product-category-filter>
+                  <option value="all">所有分类</option>
+                  <option value="tables">Folding Table Series</option>
+                  <option value="tents">Outdoor Tents Series</option>
+                  <option value="other">Other Products</option>
+                </select>
+              </div>
+              <div class="product-search">
+                <span>产品名称</span>
+                <input type="search" data-product-search placeholder="请输入产品名称">
+                <button type="button" data-product-search-button>搜索</button>
+              </div>
+              <label class="deleted-toggle product-deleted-toggle">
+                <input type="checkbox" disabled>
+                显示已删除的产品
+              </label>
+            </div>
+            <div data-product-list></div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="blogs">
+          <div class="admin-board">
+            <div class="board-toolbar">
+              <div class="board-actions">
+                <button type="button" data-add="blog">添加博客</button>
+                <button class="batch-button" type="button" data-save>保存 JSON</button>
+                <button class="ghost-button" type="button" data-reload>重新读取</button>
+              </div>
+              <label class="deleted-toggle">
+                <input type="checkbox" disabled>
+                显示已删除的博客
+              </label>
+            </div>
+            <div data-blog-list></div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="site">
+          <div class="admin-board">
+            <div class="board-toolbar">
+              <div class="board-actions">
+                <button class="batch-button" type="button" data-save>保存 JSON</button>
+                <button class="ghost-button" type="button" data-reload>重新读取</button>
+              </div>
+            </div>
+            <form class="editor-card" data-site-form></form>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="editor-drawer" data-editor-drawer>
+      <div class="editor-panel" role="dialog" aria-modal="true" aria-labelledby="editor-title">
+        <div class="editor-panel-header">
+          <h3 id="editor-title" data-editor-title>编辑内容</h3>
+          <button type="button" data-editor-close aria-label="关闭">×</button>
+        </div>
+        <div data-editor-body></div>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
