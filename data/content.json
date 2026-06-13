@@ -1,0 +1,450 @@
+{
+  "site": {
+    "brand": "HENSY",
+    "phone": "+86 136 1650 8089",
+    "email": "contact@sloan-safety.com"
+  },
+  "banners": [
+    {
+      "id": "hero-canopy",
+      "title": "Outdoor Folding Table",
+      "eyebrow": "Hangzhou Zhejiang,China",
+      "description": "Space-saving folding tables, chairs, benches, and pop-up tents for distributors, retailers, event suppliers, and outdoor brands.",
+      "primaryText": "View Series",
+      "primaryUrl": "products.html",
+      "secondaryText": "Send Inquiry",
+      "secondaryUrl": "contact.html",
+      "image": "tu/hero-canopy-scene.png",
+      "alt": "Green pop-up tent over an outdoor folding table and chairs",
+      "enabled": true
+    },
+    {
+      "id": "hero-patio",
+      "title": "Outdoor Folding Table",
+      "eyebrow": "Hangzhou Zhejiang,China",
+      "description": "Space-saving folding tables, chairs, benches, and pop-up tents for distributors, retailers, event suppliers, and outdoor brands.",
+      "primaryText": "View Series",
+      "primaryUrl": "products.html",
+      "secondaryText": "Send Inquiry",
+      "secondaryUrl": "contact.html",
+      "image": "uploads/1781331485119-Mask-group.png",
+      "alt": "Modern patio building exterior with folding furniture detail",
+      "enabled": true
+    },
+    {
+      "id": "hero-round",
+      "title": "Outdoor Folding Table",
+      "eyebrow": "Hangzhou Zhejiang,China",
+      "description": "Space-saving folding tables, chairs, benches, and pop-up tents for distributors, retailers, event suppliers, and outdoor brands.",
+      "primaryText": "View Series",
+      "primaryUrl": "products.html",
+      "secondaryText": "Send Inquiry",
+      "secondaryUrl": "contact.html",
+      "image": "tu/hero-round-table.png",
+      "alt": "Round folding table with a vase and mug indoors",
+      "enabled": true
+    },
+    {
+      "id": "banner-mqbysxzq-4rzp4",
+      "title": "New Banner",
+      "eyebrow": "",
+      "description": "",
+      "primaryText": "View More",
+      "primaryUrl": "#",
+      "secondaryText": "",
+      "secondaryUrl": "",
+      "image": "",
+      "alt": "",
+      "enabled": true
+    },
+    {
+      "id": "banner-mqbysza6-ckado",
+      "title": "New Banner",
+      "eyebrow": "",
+      "description": "",
+      "primaryText": "View More",
+      "primaryUrl": "#",
+      "secondaryText": "",
+      "secondaryUrl": "",
+      "image": "",
+      "alt": "",
+      "enabled": true
+    },
+    {
+      "id": "banner-mqbyszer-fnceb",
+      "title": "New Banner",
+      "eyebrow": "",
+      "description": "",
+      "primaryText": "View More",
+      "primaryUrl": "#",
+      "secondaryText": "",
+      "secondaryUrl": "",
+      "image": "",
+      "alt": "",
+      "enabled": true
+    },
+    {
+      "id": "banner-mqbyszpe-nfg17",
+      "title": "New Banner",
+      "eyebrow": "",
+      "description": "",
+      "primaryText": "View More",
+      "primaryUrl": "#",
+      "secondaryText": "",
+      "secondaryUrl": "",
+      "image": "",
+      "alt": "",
+      "enabled": true
+    }
+  ],
+  "products": [
+    {
+      "id": "hs-ft18075r",
+      "category": "tables",
+      "model": "HS-FT18075R(Rattan Design)",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "Rattan design folding table with durable steel frame",
+      "cover": "tu/chanpin/Rectangle 284-1.png",
+      "alt": "Brown rattan folding table",
+      "featured": true,
+      "gallery": [
+        "tu/chanpin/Rectangle 284-1.png"
+      ],
+      "colors": [
+        "#bbafa7",
+        "#473327",
+        "#030303"
+      ],
+      "features": [
+        "Rattan texture tabletop",
+        "Foldable structure",
+        "Outdoor-ready frame"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-ft18074",
+      "category": "tables",
+      "model": "HS-FT18074",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "HDPE Table Top And Powder-Coated Steel Frame",
+      "cover": "tu/chanpin/Rectangle 284.png",
+      "alt": "White rectangular fold in half table",
+      "featured": true,
+      "gallery": [
+        "tu/chanpinxiangqing/image 107.jpg",
+        "tu/chanpinxiangqing/Rectangle 4149.jpg",
+        "tu/chanpinxiangqing/Rectangle 4152.jpg",
+        "tu/chanpinxiangqing/Rectangle 4153.jpg",
+        "tu/chanpinxiangqing/Rectangle 4154.jpg"
+      ],
+      "colors": [
+        "#f2f3f4",
+        "#a8a9ad",
+        "#4a4e54",
+        "#bbafa7",
+        "#473327",
+        "#030303"
+      ],
+      "features": [
+        "High-density HDPE tabletop",
+        "Heavy-duty steel frame",
+        "Folds in half with built-in handle",
+        "Non-marring foot caps for floor protection"
+      ],
+      "specs": [
+        {
+          "label": "Product Size",
+          "values": [
+            "1.5m×1.5m (5’×5’)",
+            "2.0m×2.0m (7’×7’)",
+            "2.5m×2.5m (8’×8’)",
+            "2.0m×3.0m (7’×10’)",
+            "3.0m×3.0m (10’×10’)",
+            "3.0m×4.0m (10’×13’)",
+            "3.0m×4.5m (10’×15’)",
+            "3.0m×6.0m (10’×20’)"
+          ]
+        },
+        {
+          "label": "Frame Weight",
+          "values": [
+            "11kg",
+            "10-15kg",
+            "11-13kg",
+            "13-18kg",
+            "12-21kg",
+            "15kg",
+            "16-21kg",
+            "20-31kg"
+          ]
+        },
+        {
+          "label": "Frame Type",
+          "values": [
+            "Outer Foot Tube:30×30mm Inner Foot Tube:25×25mm Cross Bar:12×25mm"
+          ]
+        },
+        {
+          "label": "Custom Description",
+          "values": [
+            "Weight and color can be customized as needed; Customization of pipe wall thickness available from 0.4-0.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hs-ft18075w",
+      "category": "tables",
+      "model": "HS-FT18075R(Rattan Design)",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "Wood grain rectangular folding table",
+      "cover": "tu/chanpin/Rectangle 284-2.png",
+      "alt": "Wood grain rectangular folding table",
+      "featured": true,
+      "gallery": [
+        "tu/chanpin/Rectangle 284-2.png"
+      ],
+      "colors": [
+        "#bbafa7",
+        "#473327"
+      ],
+      "features": [
+        "Wood grain finish",
+        "Compact folding storage",
+        "Powder-coated steel frame"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-ftr122",
+      "category": "tables",
+      "model": "HS-FTR122",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "White round banquet folding table",
+      "cover": "tu/chanpin/Rectangle 284-3.png",
+      "alt": "White round banquet folding table",
+      "featured": true,
+      "gallery": [
+        "tu/chanpin/Rectangle 284-3.png"
+      ],
+      "colors": [
+        "#f2f3f4"
+      ],
+      "features": [
+        "Round tabletop",
+        "Banquet and event use",
+        "Folding legs"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-bt61",
+      "category": "other",
+      "model": "HS-BT61",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "Round bar-height folding table",
+      "cover": "tu/chanpin/Rectangle 284-4.png",
+      "alt": "White round bar-height folding table",
+      "featured": false,
+      "gallery": [
+        "tu/chanpin/Rectangle 284-4.png"
+      ],
+      "colors": [
+        "#f2f3f4"
+      ],
+      "features": [
+        "Bar-height table",
+        "Compact footprint",
+        "Stable pedestal style"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-crt",
+      "category": "other",
+      "model": "HS-CRT",
+      "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
+      "summary": "Brown rattan folding chair",
+      "cover": "tu/chanpin/Rectangle 284-6.png",
+      "alt": "Brown rattan folding chair",
+      "featured": false,
+      "gallery": [
+        "tu/chanpin/Rectangle 284-6.png"
+      ],
+      "colors": [
+        "#473327"
+      ],
+      "features": [
+        "Rattan design",
+        "Foldable chair",
+        "Outdoor and event use"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-tb01o",
+      "category": "tents",
+      "model": "HS-TB01O",
+      "name": "BLACK OVAL TUBE IRON TENT",
+      "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
+      "cover": "tu/chanpin/Rectangle 284-8.png",
+      "alt": "Blue outdoor pop-up tent",
+      "featured": true,
+      "gallery": [
+        "tu/series-tent-blue-oval.png",
+        "tu/chanpin/Rectangle 284-8.png"
+      ],
+      "colors": [
+        "#0c5ee2",
+        "#f62a1c",
+        "#31ce5a",
+        "#eee03d",
+        "#efefef",
+        "#892cd6",
+        "#fc76bf",
+        "#80e3fd",
+        "#f16d0a",
+        "#5a330f",
+        "#b9254d",
+        "#203b86"
+      ],
+      "features": [
+        "Oval tube frame",
+        "Custom fabric color",
+        "Fast pop-up setup"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-tb01s",
+      "category": "tents",
+      "model": "HS-TB01S",
+      "name": "BLACK SQUARE TUBE IRON TENT",
+      "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
+      "cover": "tu/chanpin/Rectangle 284-9.png",
+      "alt": "Green outdoor pop-up tent",
+      "featured": true,
+      "gallery": [
+        "tu/series-tent-blue-square.png",
+        "tu/chanpin/Rectangle 284-9.png"
+      ],
+      "colors": [
+        "#0c5ee2",
+        "#31ce5a",
+        "#efefef"
+      ],
+      "features": [
+        "Square tube frame",
+        "Commercial event use",
+        "Custom tube thickness"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-tw02",
+      "category": "tents",
+      "model": "HS-TW02",
+      "name": "WHITE TUBE IRON TENT",
+      "summary": "Outdoor pop-up tent for events and temporary display spaces",
+      "cover": "tu/chanpin/Rectangle 284-10.png",
+      "alt": "Beige outdoor pop-up tent",
+      "featured": true,
+      "gallery": [
+        "tu/series-tent-white-tube.png",
+        "tu/chanpin/Rectangle 284-10.png"
+      ],
+      "colors": [
+        "#efefef",
+        "#bbafa7"
+      ],
+      "features": [
+        "White tube frame",
+        "Custom printing available",
+        "Easy transport"
+      ],
+      "specs": []
+    },
+    {
+      "id": "hs-tb01o-red",
+      "category": "tents",
+      "model": "HS-TB01O",
+      "name": "Hexagonal TUBE IRON TENT",
+      "summary": "Red pop-up tent for outdoor activities and commercial events",
+      "cover": "tu/chanpin/Rectangle 284-11.png",
+      "alt": "Red outdoor pop-up tent",
+      "featured": true,
+      "gallery": [
+        "tu/series-tent-red-hexagonal.png",
+        "tu/chanpin/Rectangle 284-11.png"
+      ],
+      "colors": [
+        "#f62a1c",
+        "#b9254d"
+      ],
+      "features": [
+        "Hexagonal tube option",
+        "Bright event color",
+        "Custom weight available"
+      ],
+      "specs": []
+    }
+  ],
+  "blogs": [
+    {
+      "id": "folding-table-buying-guide",
+      "title": "Introduction To Accounting: Basics For Beginners",
+      "category": "Business",
+      "date": "2026-02-08",
+      "cover": "tu/blog/Rectangle 34629485.png",
+      "alt": "Prismatic light artwork for a featured article",
+      "excerpt": "A practical guide for selecting folding tables and outdoor event products.",
+      "featured": true,
+      "content": "Use this article body to write detailed buying guides, product comparison notes, export tips, and practical outdoor furniture advice for customers."
+    },
+    {
+      "id": "outdoor-event-sourcing",
+      "title": "Introduction To Accounting: Basics For Beginners",
+      "category": "Business",
+      "date": "2026-02-08",
+      "cover": "tu/blog/Rectangle 34629481-1.png",
+      "alt": "Team celebrating in a bright office",
+      "excerpt": "How to match tents, tables, and chairs for commercial event programs.",
+      "featured": true,
+      "content": "Describe event scenarios, product combinations, lead times, customization, packing, and shipment details here."
+    },
+    {
+      "id": "accounting-basics",
+      "title": "Introduction To Accounting: Basics For Beginners",
+      "category": "Business",
+      "date": "2026-02-08",
+      "cover": "tu/blog/Rectangle 34629481.png",
+      "alt": "Team celebrating around desks",
+      "excerpt": "Latest article summary.",
+      "featured": false,
+      "content": "Replace this placeholder with the full blog article content."
+    },
+    {
+      "id": "standards-2025",
+      "title": "Updates To Accounting Standards For 2025",
+      "category": "Business",
+      "date": "2026-02-08",
+      "cover": "tu/blog/Rectangle 34629482.png",
+      "alt": "Colleagues reviewing work beside a laptop",
+      "excerpt": "Latest article summary.",
+      "featured": false,
+      "content": "Replace this placeholder with the full blog article content."
+    },
+    {
+      "id": "beginner-guide",
+      "title": "Introduction To Accounting: Basics For Beginners",
+      "category": "Business",
+      "date": "2026-02-08",
+      "cover": "tu/blog/Rectangle 34629483.png",
+      "alt": "Group discussing an open book together",
+      "excerpt": "Latest article summary.",
+      "featured": false,
+      "content": "Replace this placeholder with the full blog article content."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+
+data/content.backup-*.json
+backups/
+tmp/
+outputs/
+
+HENSY-web-preview/
+HENSY-web-preview 2/
+HENSY-web-preview.zip
+小红书写作计划/
