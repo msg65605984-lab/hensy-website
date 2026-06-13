@@ -14,7 +14,7 @@
       "primaryUrl": "products.html",
       "secondaryText": "Send Inquiry",
       "secondaryUrl": "contact.html",
-      "image": "tu/hero-canopy-scene.png",
+      "image": "tu/hero-canopy-scene.jpg",
       "alt": "Green pop-up tent over an outdoor folding table and chairs",
       "enabled": true
     },
@@ -27,7 +27,7 @@
       "primaryUrl": "products.html",
       "secondaryText": "Send Inquiry",
       "secondaryUrl": "contact.html",
-      "image": "uploads/contact-floating-preview.png",
+      "image": "uploads/contact-floating-preview.jpg",
       "alt": "Modern patio building exterior with folding furniture detail",
       "enabled": true
     },
@@ -40,7 +40,7 @@
       "primaryUrl": "products.html",
       "secondaryText": "Send Inquiry",
       "secondaryUrl": "contact.html",
-      "image": "tu/hero-round-table.png",
+      "image": "tu/hero-round-table.jpg",
       "alt": "Round folding table with a vase and mug indoors",
       "enabled": true
     },
@@ -104,11 +104,11 @@
       "model": "HS-FT18075R(Rattan Design)",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Rattan design folding table with durable steel frame",
-      "cover": "tu/products/table-rattan-rectangle.png",
+      "cover": "tu/products/table-rattan-rectangle.jpg",
       "alt": "Brown rattan folding table",
       "featured": true,
       "gallery": [
-        "tu/products/table-rattan-rectangle.png"
+        "tu/products/table-rattan-rectangle.jpg"
       ],
       "colors": [
         "#bbafa7",
@@ -128,7 +128,7 @@
       "model": "HS-FT18074",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "HDPE Table Top And Powder-Coated Steel Frame",
-      "cover": "tu/products/table-white-rectangle.png",
+      "cover": "tu/products/table-white-rectangle.jpg",
       "alt": "White rectangular fold in half table",
       "featured": true,
       "gallery": [
@@ -199,11 +199,11 @@
       "model": "HS-FT18075R(Rattan Design)",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Wood grain rectangular folding table",
-      "cover": "tu/products/table-wood-grain-rectangle.png",
+      "cover": "tu/products/table-wood-grain-rectangle.jpg",
       "alt": "Wood grain rectangular folding table",
       "featured": true,
       "gallery": [
-        "tu/products/table-wood-grain-rectangle.png"
+        "tu/products/table-wood-grain-rectangle.jpg"
       ],
       "colors": [
         "#bbafa7",
@@ -222,11 +222,11 @@
       "model": "HS-FTR122",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "White round banquet folding table",
-      "cover": "tu/products/table-white-round.png",
+      "cover": "tu/products/table-white-round.jpg",
       "alt": "White round banquet folding table",
       "featured": true,
       "gallery": [
-        "tu/products/table-white-round.png"
+        "tu/products/table-white-round.jpg"
       ],
       "colors": [
         "#f2f3f4"
@@ -244,11 +244,11 @@
       "model": "HS-BT61",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Round bar-height folding table",
-      "cover": "tu/products/table-white-bar-height.png",
+      "cover": "tu/products/table-white-bar-height.jpg",
       "alt": "White round bar-height folding table",
       "featured": false,
       "gallery": [
-        "tu/products/table-white-bar-height.png"
+        "tu/products/table-white-bar-height.jpg"
       ],
       "colors": [
         "#f2f3f4"
@@ -266,11 +266,11 @@
       "model": "HS-CRT",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Brown rattan folding chair",
-      "cover": "tu/products/chair-rattan-folding.png",
+      "cover": "tu/products/chair-rattan-folding.jpg",
       "alt": "Brown rattan folding chair",
       "featured": false,
       "gallery": [
-        "tu/products/chair-rattan-folding.png"
+        "tu/products/chair-rattan-folding.jpg"
       ],
       "colors": [
         "#473327"
@@ -288,12 +288,12 @@
       "model": "HS-TB01O",
       "name": "BLACK OVAL TUBE IRON TENT",
       "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
-      "cover": "tu/products/tent-blue-pop-up.png",
+      "cover": "tu/products/tent-blue-pop-up.jpg",
       "alt": "Blue outdoor pop-up tent",
       "featured": true,
       "gallery": [
-        "tu/series-tent-blue-oval.png",
-        "tu/products/tent-blue-pop-up.png"
+        "tu/series-tent-blue-oval.jpg",
+        "tu/products/tent-blue-pop-up.jpg"
       ],
       "colors": [
         "#0c5ee2",
@@ -322,12 +322,12 @@
       "model": "HS-TB01S",
       "name": "BLACK SQUARE TUBE IRON TENT",
       "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
-      "cover": "tu/products/tent-green-pop-up.png",
+      "cover": "tu/products/tent-green-pop-up.jpg",
       "alt": "Green outdoor pop-up tent",
       "featured": true,
       "gallery": [
-        "tu/series-tent-blue-square.png",
-        "tu/products/tent-green-pop-up.png"
+        "tu/series-tent-blue-square.jpg",
+        "tu/products/tent-green-pop-up.jpg"
       ],
       "colors": [
         "#0c5ee2",
@@ -347,12 +347,12 @@
       "model": "HS-TW02",
       "name": "WHITE TUBE IRON TENT",
       "summary": "Outdoor pop-up tent for events and temporary display spaces",
-      "cover": "tu/products/tent-beige-pop-up.png",
+      "cover": "tu/products/tent-beige-pop-up.jpg",
       "alt": "Beige outdoor pop-up tent",
       "featured": true,
       "gallery": [
-        "tu/series-tent-white-tube.png",
-        "tu/products/tent-beige-pop-up.png"
+        "tu/series-tent-white-tube.jpg",
+        "tu/products/tent-beige-pop-up.jpg"
       ],
       "colors": [
         "#efefef",
@@ -371,12 +371,12 @@
       "model": "HS-TB01O",
       "name": "Hexagonal TUBE IRON TENT",
       "summary": "Red pop-up tent for outdoor activities and commercial events",
-      "cover": "tu/products/tent-red-hexagonal.png",
+      "cover": "tu/products/tent-red-hexagonal.jpg",
       "alt": "Red outdoor pop-up tent",
       "featured": true,
       "gallery": [
-        "tu/series-tent-red-hexagonal.png",
-        "tu/products/tent-red-hexagonal.png"
+        "tu/series-tent-red-hexagonal.jpg",
+        "tu/products/tent-red-hexagonal.jpg"
       ],
       "colors": [
         "#f62a1c",
@@ -396,7 +396,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/featured-prismatic-light.png",
+      "cover": "tu/blog/featured-prismatic-light.jpg",
       "alt": "Prismatic light artwork for a featured article",
       "excerpt": "A practical guide for selecting folding tables and outdoor event products.",
       "featured": true,
@@ -407,7 +407,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/featured-team-office.png",
+      "cover": "tu/blog/featured-team-office.jpg",
       "alt": "Team celebrating in a bright office",
       "excerpt": "How to match tents, tables, and chairs for commercial event programs.",
       "featured": true,
@@ -418,7 +418,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/article-team-desks.png",
+      "cover": "tu/blog/article-team-desks.jpg",
       "alt": "Team celebrating around desks",
       "excerpt": "Latest article summary.",
       "featured": false,
@@ -429,7 +429,7 @@
       "title": "Updates To Accounting Standards For 2025",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/article-laptop-review.png",
+      "cover": "tu/blog/article-laptop-review.jpg",
       "alt": "Colleagues reviewing work beside a laptop",
       "excerpt": "Latest article summary.",
       "featured": false,
@@ -440,7 +440,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/article-open-book-discussion.png",
+      "cover": "tu/blog/article-open-book-discussion.jpg",
       "alt": "Group discussing an open book together",
       "excerpt": "Latest article summary.",
       "featured": false,

@@ -11,7 +11,7 @@ if (!existingFloatingInquiry) {
         <img src="tu/floating/icon-inquiry-toggle.svg" alt="" aria-hidden="true">
       </button>
       <div class="quick-inquiry-body">
-        <img class="quick-inquiry-image" src="tu/floating/inquiry-product.png" alt="">
+        <img class="quick-inquiry-image" src="tu/floating/inquiry-product.jpg" alt="">
         <form class="quick-inquiry-form" action="#" method="post">
           <label>
             <span>Your Name</span>
