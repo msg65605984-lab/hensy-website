@@ -11,7 +11,7 @@
 - Footer: dark HENSY footer with logo, description, email and phone contact buttons, quick links, product category links, copyright strip, and Back To Top control.
 - Navigation: updated to `Home`, `Products`, `News`, `About Us`, `FAQ`, `Contact Us`.
 - Interactions: mobile menu toggle, carousel controls, hover pause/resume, repeat-on-scroll entrance animations, product-card hover motion, selectable color swatches, smooth FAQ accordion, inquiry prepared feedback, and footer entrance animation.
-- Second page: `products.html` product listing page with `tu/chanpin/Frame 54.png` hero banner, 12 product cards from `tu/chanpin`, category filters, inquiry strip, and reused footer/navigation styling.
+- Second page: `products.html` product listing page with `tu/products/hero-folding-table.png` hero banner, 12 product cards from `tu/products`, category filters, inquiry strip, and reused footer/navigation styling.
 
 **Static Checks**
 - `node --check script.js`: passed.

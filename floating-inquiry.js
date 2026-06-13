@@ -8,10 +8,10 @@ if (!existingFloatingInquiry) {
     <div class="quick-inquiry-card">
       <button class="quick-inquiry-toggle" type="button" aria-expanded="false">
         <span>Quickly Inquiry</span>
-        <img src="tu/xuanfu/Group 236.svg" alt="" aria-hidden="true">
+        <img src="tu/floating/icon-inquiry-toggle.svg" alt="" aria-hidden="true">
       </button>
       <div class="quick-inquiry-body">
-        <img class="quick-inquiry-image" src="tu/xuanfu/Mask group.png" alt="">
+        <img class="quick-inquiry-image" src="tu/floating/inquiry-product.png" alt="">
         <form class="quick-inquiry-form" action="#" method="post">
           <label>
             <span>Your Name</span>
@@ -35,19 +35,19 @@ if (!existingFloatingInquiry) {
     </div>
     <nav class="floating-contact-icons" aria-label="Floating contact links">
       <a href="https://wa.me/8613616508089" aria-label="WhatsApp">
-        <img src="tu/xuanfu/Group 137.svg" alt="">
+        <img src="tu/floating/icon-whatsapp.svg" alt="">
       </a>
       <a href="#footer" aria-label="WeChat">
-        <img src="tu/xuanfu/Group 130.svg" alt="">
+        <img src="tu/floating/icon-wechat.svg" alt="">
       </a>
       <a href="tel:+8613616508089" aria-label="Phone">
-        <img src="tu/xuanfu/Group 131.svg" alt="">
+        <img src="tu/floating/icon-phone.svg" alt="">
       </a>
       <a href="mailto:contact@sloan-safety.com" aria-label="Email">
-        <img src="tu/xuanfu/Group 132.svg" alt="">
+        <img src="tu/floating/icon-email.svg" alt="">
       </a>
       <a class="is-back-top" href="#top" aria-label="Back to top">
-        <img src="tu/xuanfu/Group 1437254516.svg" alt="">
+        <img src="tu/floating/icon-back-top.svg" alt="">
       </a>
     </nav>
   `;

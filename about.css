@@ -639,7 +639,7 @@ html {
   bottom: 72px;
   width: 39px;
   height: 24px;
-  background: url("tu/about/”.svg") center / contain no-repeat;
+  background: url("tu/about/story-quote-mark.svg") center / contain no-repeat;
   content: "";
   transition:
     opacity 220ms ease,

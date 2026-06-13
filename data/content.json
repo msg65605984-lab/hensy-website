@@ -27,7 +27,7 @@
       "primaryUrl": "products.html",
       "secondaryText": "Send Inquiry",
       "secondaryUrl": "contact.html",
-      "image": "uploads/1781331485119-Mask-group.png",
+      "image": "uploads/contact-floating-preview.png",
       "alt": "Modern patio building exterior with folding furniture detail",
       "enabled": true
     },
@@ -104,11 +104,11 @@
       "model": "HS-FT18075R(Rattan Design)",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Rattan design folding table with durable steel frame",
-      "cover": "tu/chanpin/Rectangle 284-1.png",
+      "cover": "tu/products/table-rattan-rectangle.png",
       "alt": "Brown rattan folding table",
       "featured": true,
       "gallery": [
-        "tu/chanpin/Rectangle 284-1.png"
+        "tu/products/table-rattan-rectangle.png"
       ],
       "colors": [
         "#bbafa7",
@@ -128,15 +128,15 @@
       "model": "HS-FT18074",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "HDPE Table Top And Powder-Coated Steel Frame",
-      "cover": "tu/chanpin/Rectangle 284.png",
+      "cover": "tu/products/table-white-rectangle.png",
       "alt": "White rectangular fold in half table",
       "featured": true,
       "gallery": [
-        "tu/chanpinxiangqing/image 107.jpg",
-        "tu/chanpinxiangqing/Rectangle 4149.jpg",
-        "tu/chanpinxiangqing/Rectangle 4152.jpg",
-        "tu/chanpinxiangqing/Rectangle 4153.jpg",
-        "tu/chanpinxiangqing/Rectangle 4154.jpg"
+        "tu/product-detail/table-main-white.jpg",
+        "tu/product-detail/table-detail-angle.jpg",
+        "tu/product-detail/table-detail-folded.jpg",
+        "tu/product-detail/table-detail-handle.jpg",
+        "tu/product-detail/table-detail-frame.jpg"
       ],
       "colors": [
         "#f2f3f4",
@@ -199,11 +199,11 @@
       "model": "HS-FT18075R(Rattan Design)",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Wood grain rectangular folding table",
-      "cover": "tu/chanpin/Rectangle 284-2.png",
+      "cover": "tu/products/table-wood-grain-rectangle.png",
       "alt": "Wood grain rectangular folding table",
       "featured": true,
       "gallery": [
-        "tu/chanpin/Rectangle 284-2.png"
+        "tu/products/table-wood-grain-rectangle.png"
       ],
       "colors": [
         "#bbafa7",
@@ -222,11 +222,11 @@
       "model": "HS-FTR122",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "White round banquet folding table",
-      "cover": "tu/chanpin/Rectangle 284-3.png",
+      "cover": "tu/products/table-white-round.png",
       "alt": "White round banquet folding table",
       "featured": true,
       "gallery": [
-        "tu/chanpin/Rectangle 284-3.png"
+        "tu/products/table-white-round.png"
       ],
       "colors": [
         "#f2f3f4"
@@ -244,11 +244,11 @@
       "model": "HS-BT61",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Round bar-height folding table",
-      "cover": "tu/chanpin/Rectangle 284-4.png",
+      "cover": "tu/products/table-white-bar-height.png",
       "alt": "White round bar-height folding table",
       "featured": false,
       "gallery": [
-        "tu/chanpin/Rectangle 284-4.png"
+        "tu/products/table-white-bar-height.png"
       ],
       "colors": [
         "#f2f3f4"
@@ -266,11 +266,11 @@
       "model": "HS-CRT",
       "name": "Mesa de Camping Plegable Calbuco 180 cm Blanca",
       "summary": "Brown rattan folding chair",
-      "cover": "tu/chanpin/Rectangle 284-6.png",
+      "cover": "tu/products/chair-rattan-folding.png",
       "alt": "Brown rattan folding chair",
       "featured": false,
       "gallery": [
-        "tu/chanpin/Rectangle 284-6.png"
+        "tu/products/chair-rattan-folding.png"
       ],
       "colors": [
         "#473327"
@@ -288,12 +288,12 @@
       "model": "HS-TB01O",
       "name": "BLACK OVAL TUBE IRON TENT",
       "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
-      "cover": "tu/chanpin/Rectangle 284-8.png",
+      "cover": "tu/products/tent-blue-pop-up.png",
       "alt": "Blue outdoor pop-up tent",
       "featured": true,
       "gallery": [
         "tu/series-tent-blue-oval.png",
-        "tu/chanpin/Rectangle 284-8.png"
+        "tu/products/tent-blue-pop-up.png"
       ],
       "colors": [
         "#0c5ee2",
@@ -322,12 +322,12 @@
       "model": "HS-TB01S",
       "name": "BLACK SQUARE TUBE IRON TENT",
       "summary": "Weight and color can be customized as needed; pipe wall thickness available from 0.4-0.8",
-      "cover": "tu/chanpin/Rectangle 284-9.png",
+      "cover": "tu/products/tent-green-pop-up.png",
       "alt": "Green outdoor pop-up tent",
       "featured": true,
       "gallery": [
         "tu/series-tent-blue-square.png",
-        "tu/chanpin/Rectangle 284-9.png"
+        "tu/products/tent-green-pop-up.png"
       ],
       "colors": [
         "#0c5ee2",
@@ -347,12 +347,12 @@
       "model": "HS-TW02",
       "name": "WHITE TUBE IRON TENT",
       "summary": "Outdoor pop-up tent for events and temporary display spaces",
-      "cover": "tu/chanpin/Rectangle 284-10.png",
+      "cover": "tu/products/tent-beige-pop-up.png",
       "alt": "Beige outdoor pop-up tent",
       "featured": true,
       "gallery": [
         "tu/series-tent-white-tube.png",
-        "tu/chanpin/Rectangle 284-10.png"
+        "tu/products/tent-beige-pop-up.png"
       ],
       "colors": [
         "#efefef",
@@ -371,12 +371,12 @@
       "model": "HS-TB01O",
       "name": "Hexagonal TUBE IRON TENT",
       "summary": "Red pop-up tent for outdoor activities and commercial events",
-      "cover": "tu/chanpin/Rectangle 284-11.png",
+      "cover": "tu/products/tent-red-hexagonal.png",
       "alt": "Red outdoor pop-up tent",
       "featured": true,
       "gallery": [
         "tu/series-tent-red-hexagonal.png",
-        "tu/chanpin/Rectangle 284-11.png"
+        "tu/products/tent-red-hexagonal.png"
       ],
       "colors": [
         "#f62a1c",
@@ -396,7 +396,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/Rectangle 34629485.png",
+      "cover": "tu/blog/featured-prismatic-light.png",
       "alt": "Prismatic light artwork for a featured article",
       "excerpt": "A practical guide for selecting folding tables and outdoor event products.",
       "featured": true,
@@ -407,7 +407,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/Rectangle 34629481-1.png",
+      "cover": "tu/blog/featured-team-office.png",
       "alt": "Team celebrating in a bright office",
       "excerpt": "How to match tents, tables, and chairs for commercial event programs.",
       "featured": true,
@@ -418,7 +418,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/Rectangle 34629481.png",
+      "cover": "tu/blog/article-team-desks.png",
       "alt": "Team celebrating around desks",
       "excerpt": "Latest article summary.",
       "featured": false,
@@ -429,7 +429,7 @@
       "title": "Updates To Accounting Standards For 2025",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/Rectangle 34629482.png",
+      "cover": "tu/blog/article-laptop-review.png",
       "alt": "Colleagues reviewing work beside a laptop",
       "excerpt": "Latest article summary.",
       "featured": false,
@@ -440,7 +440,7 @@
       "title": "Introduction To Accounting: Basics For Beginners",
       "category": "Business",
       "date": "2026-02-08",
-      "cover": "tu/blog/Rectangle 34629483.png",
+      "cover": "tu/blog/article-open-book-discussion.png",
       "alt": "Group discussing an open book together",
       "excerpt": "Latest article summary.",
       "featured": false,
