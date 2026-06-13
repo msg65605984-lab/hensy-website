@@ -140,10 +140,12 @@ html {
 .blog-card h2,
 .blog-card h3 {
   margin: 0;
+  color: var(--ink);
   font-family: var(--font-body);
   font-weight: 800;
   line-height: 1.6;
   text-transform: capitalize;
+  transition: color 160ms ease;
 }
 
 .blog-card-featured {
@@ -176,8 +178,14 @@ html {
 }
 
 .blog-card-side h2 {
-  color: var(--green);
   font-size: 20px;
+}
+
+.blog-card a:active h2,
+.blog-card a:active h3,
+.blog-card a:focus-visible h2,
+.blog-card a:focus-visible h3 {
+  color: var(--green);
 }
 
 .blog-card-divider {
@@ -214,7 +222,6 @@ html {
 }
 
 .view-more {
-  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -226,26 +233,27 @@ html {
   text-transform: uppercase;
 }
 
-.view-more::after {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background:
-    linear-gradient(#ffffff, #ffffff) 6px 9px / 8px 2px no-repeat,
-    linear-gradient(#ffffff, #ffffff) 12px 5px / 2px 8px no-repeat,
-    linear-gradient(45deg, transparent 50%, #ffffff 50%) 10px 5px / 6px 6px no-repeat,
-    var(--green);
-  content: "";
+.view-more > span:first-child {
+  border-bottom: 1px solid var(--green);
 }
 
-.view-more::before {
-  position: absolute;
-  right: 25px;
-  bottom: -4px;
-  left: 0;
-  height: 1px;
+.view-more > span:last-child {
+  display: grid;
+  width: 20px;
+  height: 20px;
   background: var(--green);
-  content: "";
+  place-items: center;
+  transition: transform 160ms ease;
+}
+
+.view-more img {
+  width: 12px;
+  height: 12px;
+}
+
+.blog-card:hover .view-more > span:last-child,
+.blog-card:focus-within .view-more > span:last-child {
+  transform: translate(2px, -2px);
 }
 
 .latest-articles {
@@ -282,10 +290,6 @@ html {
   min-height: 64px;
   color: var(--ink);
   font-size: 20px;
-}
-
-.blog-card-latest:first-child h3 {
-  color: var(--green);
 }
 
 .blog-card-latest .blog-card-divider {

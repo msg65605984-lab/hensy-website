@@ -27,7 +27,7 @@ function renderBlogCard(blog, headingTag = "h3", extraClass = "") {
           <div class="blog-card-meta">
             <span>${escapeHtml(blog.category || "")}</span>
             <time datetime="${escapeHtml(blog.date || "")}">${escapeHtml(window.HensyContent?.formatDate(blog.date) || blog.date || "")}</time>
-            ${extraClass.includes("blog-card-featured") ? '<span class="view-more">View More</span>' : ""}
+            ${extraClass.includes("blog-card-featured") ? '<span class="view-more"><span>View More</span><span aria-hidden="true"><img src="tu/series-arrow-icon.svg" alt=""></span></span>' : ""}
           </div>
         </div>
       </a>
