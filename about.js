@@ -2,12 +2,9 @@ const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelectorAll(".main-nav a");
 const storyTrack = document.querySelector(".story-track");
-const storyPrev = document.querySelector(".story-prev");
-const storyNext = document.querySelector(".story-next");
 const advantageCards = document.querySelector(".about-cards .about-page-inner");
 const heroVideo = document.querySelector(".about-hero-media video");
 const statNumbers = [...document.querySelectorAll(".about-stats strong[data-count]")];
-let storyScrollLocked = false;
 let storyAutoPaused = false;
 let lastStoryAutoTime = 0;
 const storyAutoSpeed = 0.018;
@@ -34,40 +31,6 @@ if (heroVideo) {
   heroVideo.defaultPlaybackRate = 0.5;
 }
 
-function scrollStories(direction) {
-  if (!storyTrack || storyScrollLocked) return;
-
-  storyScrollLocked = true;
-  const activeButton = direction > 0 ? storyNext : storyPrev;
-  const amount = Math.max(320, storyTrack.clientWidth * 0.55);
-
-  activeButton?.classList.add("is-active");
-  window.setTimeout(() => activeButton?.classList.remove("is-active"), 260);
-
-  if (direction > 0) {
-    const firstCard = storyTrack.querySelector(".story-card");
-    if (firstCard) {
-      storyTrack.append(firstCard);
-      storyTrack.scrollLeft = Math.max(0, storyTrack.scrollLeft - firstCard.offsetWidth - 20);
-    }
-  }
-
-  if (direction < 0) {
-    const storyCards = storyTrack.querySelectorAll(".story-card");
-    const lastCard = storyCards[storyCards.length - 1];
-    if (lastCard) {
-      storyTrack.prepend(lastCard);
-      storyTrack.scrollLeft = lastCard.offsetWidth + 20;
-    }
-  }
-
-  storyTrack.scrollBy({ left: amount * direction, behavior: "smooth" });
-  window.setTimeout(() => {
-    storyScrollLocked = false;
-    updateOperableStories();
-  }, 520);
-}
-
 function updateOperableStories() {
   if (!storyTrack) return;
 
@@ -85,8 +48,6 @@ function updateOperableStories() {
   });
 }
 
-storyPrev?.addEventListener("click", () => scrollStories(-1));
-storyNext?.addEventListener("click", () => scrollStories(1));
 storyTrack?.addEventListener(
   "scroll",
   () => window.requestAnimationFrame(() => {

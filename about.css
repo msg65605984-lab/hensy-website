@@ -118,7 +118,7 @@ html {
   height: 510px;
   margin: 0;
   overflow: hidden;
-  background: #dfe8e1;
+  background: var(--white);
 }
 
 .about-hero-media img,
@@ -512,7 +512,6 @@ html {
 
 .stories-head {
   display: grid;
-  grid-template-columns: 1fr auto;
   align-items: center;
   width: min(1240px, calc(100% - 144px));
   margin: 0 auto 65px;
@@ -521,61 +520,6 @@ html {
 .stories-head h2 {
   margin: 0;
   text-align: center;
-}
-
-.stories-actions {
-  display: flex;
-  gap: 8px;
-  justify-self: end;
-}
-
-.stories-actions button {
-  position: relative;
-  width: 55px;
-  height: 55px;
-  border: 0;
-  background: var(--white);
-  color: var(--ink);
-  cursor: pointer;
-  transition:
-    background 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
-}
-
-.stories-actions button::before {
-  position: absolute;
-  inset: 0;
-  width: 14px;
-  height: 14px;
-  margin: auto;
-  border-top: 2px solid var(--ink);
-  border-left: 2px solid var(--ink);
-  content: "";
-}
-
-.stories-actions .story-prev::before {
-  transform: rotate(-45deg);
-}
-
-.stories-actions button.is-active,
-.stories-actions button:active {
-  background: var(--green);
-  color: var(--white);
-}
-
-.stories-actions button.is-active::before,
-.stories-actions button:active::before {
-  border-color: var(--white);
-}
-
-.stories-actions .story-next::before {
-  transform: rotate(135deg);
-}
-
-.stories-actions button:hover,
-.stories-actions button:focus-visible {
-  transform: translateY(-2px);
 }
 
 .story-track {
@@ -1051,14 +995,6 @@ html {
 
   .stories-section {
     padding-bottom: 92px;
-  }
-
-  .stories-head {
-    gap: 22px;
-  }
-
-  .stories-actions {
-    justify-self: center;
   }
 
   .story-track {
