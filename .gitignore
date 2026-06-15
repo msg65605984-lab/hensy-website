@@ -7,6 +7,8 @@ HENSY-web-preview/
 HENSY-web-preview 2/
 HENSY-web-online/
 HENSY-web-*.zip
+HENSY-tencent-server/
+HENSY-tencent-server.zip
 data/content.backup-*.json
 .env
 .env.*
