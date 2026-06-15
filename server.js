@@ -6,10 +6,16 @@ const { URL } = require("url");
 const rootDir = __dirname;
 const dataDir = process.env.DATA_DIR || path.join(rootDir, "data");
 const uploadDir = process.env.UPLOAD_DIR || path.join(rootDir, "uploads");
+const defaultUploadDir = path.join(rootDir, "uploads");
 const dataFile = path.join(dataDir, "content.json");
 const defaultDataFile = path.join(rootDir, "data", "content.json");
 const port = Number(process.env.PORT || 3000);
-const adminPassword = process.env.ADMIN_PASSWORD || "admin123";
+const isProduction = process.env.NODE_ENV === "production";
+const adminPassword = process.env.ADMIN_PASSWORD || (isProduction ? "" : "admin123");
+
+if (!adminPassword) {
+  throw new Error("ADMIN_PASSWORD is required when NODE_ENV=production.");
+}
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -22,8 +28,17 @@ const mimeTypes = {
   ".jpeg": "image/jpeg",
   ".gif": "image/gif",
   ".webp": "image/webp",
+  ".avif": "image/avif",
   ".ico": "image/x-icon",
   ".mp4": "video/mp4",
+};
+
+const uploadExtensions = {
+  "image/png": ".png",
+  "image/jpeg": ".jpg",
+  "image/gif": ".gif",
+  "image/webp": ".webp",
+  "image/avif": ".avif",
 };
 
 function send(res, status, body, type = "application/json; charset=utf-8") {
@@ -31,6 +46,9 @@ function send(res, status, body, type = "application/json; charset=utf-8") {
   res.writeHead(status, {
     "content-type": type,
     "content-length": Buffer.byteLength(payload),
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET,POST,PUT,OPTIONS",
+    "access-control-allow-headers": "content-type,x-admin-password",
   });
   res.end(payload);
 }
@@ -39,10 +57,21 @@ function sendJson(res, status, body) {
   send(res, status, body, "application/json; charset=utf-8");
 }
 
-function getBody(req) {
+function getBody(req, maxBytes = 1024 * 1024) {
   return new Promise((resolve, reject) => {
     const chunks = [];
-    req.on("data", (chunk) => chunks.push(chunk));
+    let total = 0;
+
+    req.on("data", (chunk) => {
+      total += chunk.length;
+      if (total > maxBytes) {
+        reject(new Error("Request body is too large."));
+        req.destroy();
+        return;
+      }
+
+      chunks.push(chunk);
+    });
     req.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
     req.on("error", reject);
   });
@@ -68,6 +97,7 @@ async function writeContent(content) {
   }
 
   await fs.writeFile(dataFile, `${JSON.stringify(content, null, 2)}\n`);
+  await pruneBackups();
 }
 
 async function ensureContentFile() {
@@ -80,10 +110,50 @@ async function ensureContentFile() {
   }
 }
 
-function sanitizeName(name) {
-  const ext = path.extname(name || "").toLowerCase() || ".png";
+async function pruneBackups(limit = 20) {
+  const files = await fs.readdir(dataDir).catch(() => []);
+  const backups = files
+    .filter((name) => /^content\.backup-\d+\.json$/.test(name))
+    .sort()
+    .reverse();
+
+  await Promise.all(backups.slice(limit).map((name) => fs.unlink(path.join(dataDir, name))));
+}
+
+async function ensureUploadDir() {
+  await fs.mkdir(uploadDir, { recursive: true });
+
+  if (path.resolve(uploadDir) === path.resolve(defaultUploadDir)) {
+    return;
+  }
+
+  const seedFiles = await fs.readdir(defaultUploadDir).catch(() => []);
+  await Promise.all(
+    seedFiles.map(async (name) => {
+      const source = path.join(defaultUploadDir, name);
+      const target = path.join(uploadDir, name);
+      await fs.copyFile(source, target, fs.constants.COPYFILE_EXCL).catch((error) => {
+        if (error.code !== "EEXIST") throw error;
+      });
+    }),
+  );
+}
+
+function safeJoin(baseDir, target) {
+  const resolvedBase = path.resolve(baseDir);
+  const resolvedTarget = path.resolve(resolvedBase, target);
+  const relative = path.relative(resolvedBase, resolvedTarget);
+
+  if (relative.startsWith("..") || path.isAbsolute(relative)) {
+    return null;
+  }
+
+  return resolvedTarget;
+}
+
+function sanitizeName(name, ext = ".png") {
   const base = path
-    .basename(name || "image", ext)
+    .basename(name || "image", path.extname(name || ""))
     .replace(/[^a-z0-9_-]+/gi, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 48);
@@ -91,6 +161,17 @@ function sanitizeName(name) {
 }
 
 async function handleApi(req, res, pathname) {
+  if (pathname === "/api/login" && req.method === "POST") {
+    const payload = JSON.parse(await getBody(req, 8 * 1024));
+    if (payload?.password !== adminPassword) {
+      sendJson(res, 401, { error: "管理密码不正确。" });
+      return true;
+    }
+
+    sendJson(res, 200, { ok: true });
+    return true;
+  }
+
   if (pathname === "/api/content" && req.method === "GET") {
     sendJson(res, 200, await readContent());
     return true;
@@ -102,7 +183,7 @@ async function handleApi(req, res, pathname) {
       return true;
     }
 
-    const content = JSON.parse(await getBody(req));
+    const content = JSON.parse(await getBody(req, 2 * 1024 * 1024));
     if (!content || !Array.isArray(content.banners) || !Array.isArray(content.products) || !Array.isArray(content.blogs)) {
       sendJson(res, 400, { error: "Invalid content payload." });
       return true;
@@ -119,14 +200,15 @@ async function handleApi(req, res, pathname) {
       return true;
     }
 
-    const payload = JSON.parse(await getBody(req));
+    const payload = JSON.parse(await getBody(req, 16 * 1024 * 1024));
     if (!payload?.data || !payload?.name) {
       sendJson(res, 400, { error: "Invalid upload payload." });
       return true;
     }
 
     const match = String(payload.data).match(/^data:(image\/[a-z0-9.+-]+);base64,(.+)$/i);
-    if (!match) {
+    const ext = uploadExtensions[match?.[1]?.toLowerCase()];
+    if (!match || !ext) {
       sendJson(res, 400, { error: "Only base64 image uploads are supported." });
       return true;
     }
@@ -138,7 +220,7 @@ async function handleApi(req, res, pathname) {
     }
 
     await fs.mkdir(uploadDir, { recursive: true });
-    const fileName = sanitizeName(payload.name);
+    const fileName = sanitizeName(payload.name, ext);
     const filePath = path.join(uploadDir, fileName);
     await fs.writeFile(filePath, bytes);
     sendJson(res, 200, { path: `uploads/${fileName}` });
@@ -155,8 +237,8 @@ async function serveStatic(res, pathname) {
   }
 
   if (pathname.startsWith("/uploads/")) {
-    const uploadPath = path.join(uploadDir, pathname.slice("/uploads/".length));
-    if (!uploadPath.startsWith(uploadDir)) {
+    const uploadPath = safeJoin(uploadDir, pathname.slice("/uploads/".length));
+    if (!uploadPath) {
       send(res, 403, "Forbidden", "text/plain; charset=utf-8");
       return;
     }
@@ -166,10 +248,23 @@ async function serveStatic(res, pathname) {
   }
 
   const cleanPath = decodeURIComponent(pathname === "/" ? "/index.html" : pathname);
-  const requested = path.normalize(cleanPath).replace(/^(\.\.[/\\])+/, "");
-  const filePath = path.join(rootDir, requested);
+  if (cleanPath.split(/[\\/]+/).includes("..")) {
+    send(res, 403, "Forbidden", "text/plain; charset=utf-8");
+    return;
+  }
 
-  if (!filePath.startsWith(rootDir)) {
+  const requested = path.normalize(cleanPath).replace(/^[/\\]+/, "").replace(/^(\.\.[/\\])+/, "");
+  const privateFiles = new Set(["server.js", "package.json", "package-lock.json", "DEPLOY.md"]);
+  const firstSegment = requested.split(/[\\/]+/)[0];
+
+  if (privateFiles.has(requested) || firstSegment.startsWith(".") || firstSegment === "node_modules") {
+    send(res, 403, "Forbidden", "text/plain; charset=utf-8");
+    return;
+  }
+
+  const filePath = safeJoin(rootDir, requested);
+
+  if (!filePath) {
     send(res, 403, "Forbidden", "text/plain; charset=utf-8");
     return;
   }
@@ -193,6 +288,11 @@ async function serveFile(res, filePath) {
 
 const server = http.createServer(async (req, res) => {
   try {
+    if (req.method === "OPTIONS") {
+      send(res, 204, "", "text/plain; charset=utf-8");
+      return;
+    }
+
     const url = new URL(req.url, `http://${req.headers.host}`);
     const handled = await handleApi(req, res, url.pathname);
     if (handled) return;
@@ -203,8 +303,20 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(port, () => {
-  console.log(`HENSY site: http://localhost:${port}`);
-  console.log(`Admin panel: http://localhost:${port}/admin.html`);
-  console.log(`Default admin password: ${adminPassword}`);
+async function start() {
+  await ensureContentFile();
+  await ensureUploadDir();
+
+  server.listen(port, () => {
+    console.log(`HENSY site: http://localhost:${port}`);
+    console.log(`Admin panel: http://localhost:${port}/admin.html`);
+    if (!isProduction && !process.env.ADMIN_PASSWORD) {
+      console.log("Development admin password: admin123");
+    }
+  });
+}
+
+start().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
 });

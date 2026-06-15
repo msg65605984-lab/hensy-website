@@ -4,9 +4,13 @@ const navLinks = document.querySelectorAll(".main-nav a");
 const storyTrack = document.querySelector(".story-track");
 const advantageCards = document.querySelector(".about-cards .about-page-inner");
 const heroVideo = document.querySelector(".about-hero-media video");
+const solutionsParallaxImg = document.querySelector(".solutions-parallax-img");
 const statNumbers = [...document.querySelectorAll(".about-stats strong[data-count]")];
 let storyAutoPaused = false;
 let lastStoryAutoTime = 0;
+let solutionsObjectCurrent = 50;
+let solutionsObjectTarget = 50;
+let solutionsObjectFrame = 0;
 const storyAutoSpeed = 0.018;
 const revealItems = [
   ...document.querySelectorAll(
@@ -59,6 +63,45 @@ window.addEventListener("resize", () => {
   updateOperableStories();
 });
 updateOperableStories();
+
+function updateSolutionsParallax() {
+  if (!solutionsParallaxImg) return;
+
+  const figure = solutionsParallaxImg.closest("figure");
+  if (!figure) return;
+
+  const box = figure.getBoundingClientRect();
+  const viewportCenter = window.innerHeight / 2;
+  const figureCenter = box.top + box.height / 2;
+  const distance = figureCenter - viewportCenter;
+
+  solutionsObjectTarget = Math.max(0, Math.min(100, 50 + distance * -0.0175));
+  if (!solutionsObjectFrame) {
+    solutionsObjectFrame = window.requestAnimationFrame(animateSolutionsParallax);
+  }
+}
+
+function animateSolutionsParallax() {
+  if (!solutionsParallaxImg) return;
+
+  solutionsObjectCurrent += (solutionsObjectTarget - solutionsObjectCurrent) * 0.12;
+  solutionsParallaxImg.style.setProperty("--solutions-object-y", `${solutionsObjectCurrent}%`);
+
+  if (Math.abs(solutionsObjectTarget - solutionsObjectCurrent) > 0.15) {
+    solutionsObjectFrame = window.requestAnimationFrame(animateSolutionsParallax);
+    return;
+  }
+
+  solutionsObjectCurrent = solutionsObjectTarget;
+  solutionsParallaxImg.style.setProperty("--solutions-object-y", `${solutionsObjectCurrent}%`);
+  solutionsObjectFrame = 0;
+}
+
+if (solutionsParallaxImg) {
+  updateSolutionsParallax();
+  window.addEventListener("scroll", () => window.requestAnimationFrame(updateSolutionsParallax), { passive: true });
+  window.addEventListener("resize", updateSolutionsParallax);
+}
 
 function autoScrollStories(time) {
   if (!storyTrack) return;

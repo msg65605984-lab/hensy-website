@@ -2,7 +2,9 @@
   "site": {
     "brand": "HENSY",
     "phone": "+86 136 1650 8089",
-    "email": "contact@sloan-safety.com"
+    "email": "contact@sloan-safety.com",
+    "aboutTitle": "Outdoor Folding Table",
+    "aboutSummary": "HENSY provides folding tables, chairs, benches, and pop-up tents for distributors, retailers, event suppliers, and outdoor brands."
   },
   "banners": [
     {
@@ -16,7 +18,11 @@
       "secondaryUrl": "contact.html",
       "image": "tu/hero-canopy-scene.jpg",
       "alt": "Green pop-up tent over an outdoor folding table and chairs",
-      "enabled": true
+      "enabled": true,
+      "order": 1,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hero-patio",
@@ -29,7 +35,11 @@
       "secondaryUrl": "contact.html",
       "image": "uploads/contact-floating-preview.jpg",
       "alt": "Modern patio building exterior with folding furniture detail",
-      "enabled": true
+      "enabled": true,
+      "order": 2,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hero-round",
@@ -42,7 +52,11 @@
       "secondaryUrl": "contact.html",
       "image": "tu/hero-round-table.jpg",
       "alt": "Round folding table with a vase and mug indoors",
-      "enabled": true
+      "enabled": true,
+      "order": 3,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "banner-mqbysxzq-4rzp4",
@@ -55,7 +69,11 @@
       "secondaryUrl": "",
       "image": "",
       "alt": "",
-      "enabled": true
+      "enabled": true,
+      "order": 4,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "banner-mqbysza6-ckado",
@@ -68,7 +86,11 @@
       "secondaryUrl": "",
       "image": "",
       "alt": "",
-      "enabled": true
+      "enabled": true,
+      "order": 5,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "banner-mqbyszer-fnceb",
@@ -81,7 +103,11 @@
       "secondaryUrl": "",
       "image": "",
       "alt": "",
-      "enabled": true
+      "enabled": true,
+      "order": 6,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "banner-mqbyszpe-nfg17",
@@ -94,7 +120,11 @@
       "secondaryUrl": "",
       "image": "",
       "alt": "",
-      "enabled": true
+      "enabled": true,
+      "order": 7,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     }
   ],
   "products": [
@@ -120,7 +150,11 @@
         "Foldable structure",
         "Outdoor-ready frame"
       ],
-      "specs": []
+      "specs": [],
+      "order": 8,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-ft18074",
@@ -191,7 +225,11 @@
             "Weight and color can be customized as needed; Customization of pipe wall thickness available from 0.4-0.8"
           ]
         }
-      ]
+      ],
+      "order": 9,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-ft18075w",
@@ -214,7 +252,11 @@
         "Compact folding storage",
         "Powder-coated steel frame"
       ],
-      "specs": []
+      "specs": [],
+      "order": 10,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-ftr122",
@@ -236,7 +278,11 @@
         "Banquet and event use",
         "Folding legs"
       ],
-      "specs": []
+      "specs": [],
+      "order": 11,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-bt61",
@@ -258,7 +304,11 @@
         "Compact footprint",
         "Stable pedestal style"
       ],
-      "specs": []
+      "specs": [],
+      "order": 12,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-crt",
@@ -280,7 +330,11 @@
         "Foldable chair",
         "Outdoor and event use"
       ],
-      "specs": []
+      "specs": [],
+      "order": 13,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-tb01o",
@@ -314,7 +368,11 @@
         "Custom fabric color",
         "Fast pop-up setup"
       ],
-      "specs": []
+      "specs": [],
+      "order": 14,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-tb01s",
@@ -339,7 +397,11 @@
         "Commercial event use",
         "Custom tube thickness"
       ],
-      "specs": []
+      "specs": [],
+      "order": 15,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-tw02",
@@ -363,7 +425,11 @@
         "Custom printing available",
         "Easy transport"
       ],
-      "specs": []
+      "specs": [],
+      "order": 16,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "hs-tb01o-red",
@@ -387,7 +453,11 @@
         "Bright event color",
         "Custom weight available"
       ],
-      "specs": []
+      "specs": [],
+      "order": 17,
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     }
   ],
   "blogs": [
@@ -400,7 +470,11 @@
       "alt": "Prismatic light artwork for a featured article",
       "excerpt": "A practical guide for selecting folding tables and outdoor event products.",
       "featured": true,
-      "content": "Use this article body to write detailed buying guides, product comparison notes, export tips, and practical outdoor furniture advice for customers."
+      "content": "Use this article body to write detailed buying guides, product comparison notes, export tips, and practical outdoor furniture advice for customers.",
+      "order": 18,
+      "createdAt": "2026-02-08",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "outdoor-event-sourcing",
@@ -411,7 +485,11 @@
       "alt": "Team celebrating in a bright office",
       "excerpt": "How to match tents, tables, and chairs for commercial event programs.",
       "featured": true,
-      "content": "Describe event scenarios, product combinations, lead times, customization, packing, and shipment details here."
+      "content": "Describe event scenarios, product combinations, lead times, customization, packing, and shipment details here.",
+      "order": 19,
+      "createdAt": "2026-02-08",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "accounting-basics",
@@ -422,7 +500,11 @@
       "alt": "Team celebrating around desks",
       "excerpt": "Latest article summary.",
       "featured": false,
-      "content": "Replace this placeholder with the full blog article content."
+      "content": "Replace this placeholder with the full blog article content.",
+      "order": 20,
+      "createdAt": "2026-02-08",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "standards-2025",
@@ -433,7 +515,11 @@
       "alt": "Colleagues reviewing work beside a laptop",
       "excerpt": "Latest article summary.",
       "featured": false,
-      "content": "Replace this placeholder with the full blog article content."
+      "content": "Replace this placeholder with the full blog article content.",
+      "order": 21,
+      "createdAt": "2026-02-08",
+      "updatedAt": "2026-06-14",
+      "status": "active"
     },
     {
       "id": "beginner-guide",
@@ -444,7 +530,65 @@
       "alt": "Group discussing an open book together",
       "excerpt": "Latest article summary.",
       "featured": false,
-      "content": "Replace this placeholder with the full blog article content."
+      "content": "Replace this placeholder with the full blog article content.",
+      "order": 22,
+      "createdAt": "2026-02-08",
+      "updatedAt": "2026-06-14",
+      "status": "active"
+    }
+  ],
+  "comments": [
+    {
+      "id": "comment-mark-chen",
+      "name": "Mark Chen",
+      "role": "Customer",
+      "avatar": "tu/touxiang/image 251.jpg",
+      "alt": "Customer portrait",
+      "content": "The folding tables are easy to carry, stable in use, and very suitable for our outdoor market events. The canopy is simple to set up and gives our booth a clean, professional look.",
+      "position": "About Us / Stories",
+      "order": 1,
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14"
+    },
+    {
+      "id": "comment-anna-lee",
+      "name": "Anna Lee",
+      "role": "Event Supplier",
+      "avatar": "tu/touxiang/image 245.jpg",
+      "alt": "Customer portrait",
+      "content": "The packing is reliable and the product quality is consistent. Our clients like the clean tabletop and stable frame.",
+      "position": "About Us / Stories",
+      "order": 2,
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "commercial-folding-tables",
+      "question": "What are commercial folding tables used for?",
+      "answer": "They are used for events, catering, schools, offices, exhibitions, training rooms and rental businesses.",
+      "order": 1,
+      "status": "active",
+      "defaultOpen": true,
+      "position": "FAQ Page",
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14"
+    },
+    {
+      "id": "custom-colors",
+      "question": "Can colors and tube thickness be customized?",
+      "answer": "Yes. Color, logo printing, frame weight and tube wall thickness can be customized according to order requirements.",
+      "order": 2,
+      "status": "active",
+      "defaultOpen": false,
+      "position": "FAQ Page",
+      "createdAt": "2026-06-13",
+      "updatedAt": "2026-06-14"
     }
   ]
 }
